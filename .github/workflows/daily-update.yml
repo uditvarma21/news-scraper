@@ -2,8 +2,8 @@ name: Daily Scraper Update
 
 on:
   schedule:
-    - cron: '30 6 * * *'  # Runs daily at 12:00 PM IST
-  workflow_dispatch:      # Allow manual trigger too
+    - cron: '30 6 * * *'  # Daily at 12:00 PM IST
+  workflow_dispatch:      # Allow manual runs too
 
 jobs:
   build:
@@ -29,11 +29,6 @@ jobs:
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git add output/ data/
-       - name: Commit and push changes
-  run: |
-    git config user.name "github-actions"
-    git config user.email "github-actions@github.com"
-    git add output/ data/
-    git diff --cached --quiet && echo "✅ No changes to commit" || (git commit -m "🔄 Auto-update scraped content" && git push)
-    git push
+        git add docs/ data/
+        git commit -m "🔄 Auto-update: scraped data and rebuilt site"
+        git push
