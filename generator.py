@@ -1,17 +1,17 @@
 import os
 from storage import Storage
 
-<<<<<<< HEAD
+
 DATA_DIR = "data"
 OUTPUT_DIR = "docs"
 TAGS_DIR = os.path.join(OUTPUT_DIR, "tags")
 TEMPLATE_DIR = "templates"
-=======
+
 DOCS_DIR = "docs"
 TAGS_DIR = os.path.join(DOCS_DIR, "tags")
 STATIC_PATH_INDEX = "static/base.css"
 STATIC_PATH_TAG = "../static/base.css"
->>>>>>> 🔥 Removed templates, moved all content to docs with updated styling
+
 
 def build_index(tags):
     html = f"""<!DOCTYPE html>
