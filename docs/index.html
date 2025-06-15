@@ -1,34 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>All News Categories</title>
-    <link rel="stylesheet" href="base.css">
+  <meta charset="UTF-8">
+  <title>Drishti Current Affairs</title>
+  <link rel="stylesheet" href="static/base.css">
+  <style>
+    .badge {
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      padding: 3px 7px;
+      font-size: 12px;
+      margin-left: 8px;
+      vertical-align: middle;
+      display: none;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <h1>All News Categories</h1>
-    <ul>
-        <li><a href='tags/GS_Paper_-_3.html'>GS Paper - 3</a></li>
-<li><a href='tags/GS_Paper_-_2.html'>GS Paper - 2</a></li>
-<li><a href='tags/Mobilization_of_Resources.html'>Mobilization of Resources</a></li>
-<li><a href='tags/Capital_Market.html'>Capital Market</a></li>
-<li><a href='tags/Banking_Sector_&_NBFCs.html'>Banking Sector & NBFCs</a></li>
-<li><a href='tags/Government_Policies_&_Interventions.html'>Government Policies & Interventions</a></li>
-<li><a href='tags/Quasi_Judicial_Bodies.html'>Quasi Judicial Bodies</a></li>
-<li><a href='tags/Tribunals.html'>Tribunals</a></li>
-<li><a href='tags/Dispute_Redressal_Mechanisms.html'>Dispute Redressal Mechanisms</a></li>
-<li><a href='tags/Transparency_&_Accountability.html'>Transparency & Accountability</a></li>
-<li><a href='tags/Quick_Facts_For_Prelims.html'>Quick Facts For Prelims</a></li>
-<li><a href='tags/Indian_Constitution.html'>Indian Constitution</a></li>
-<li><a href='tags/Constitutional_Amendments.html'>Constitutional Amendments</a></li>
-<li><a href='tags/Federalism.html'>Federalism</a></li>
-<li><a href='tags/Centre-State_Relations.html'>Centre-State Relations</a></li>
-<li><a href='tags/Emergency_Provisions.html'>Emergency Provisions</a></li>
-<li><a href='tags/Judiciary.html'>Judiciary</a></li>
-<li><a href='tags/Rapid_Fire_CA.html'>Rapid Fire CA</a></li>
-<li><a href='tags/Mineral_&_Energy_Resources.html'>Mineral & Energy Resources</a></li>
-<li><a href='tags/Conservation.html'>Conservation</a></li>
-<li><a href='tags/Cropping_Patterns.html'>Cropping Patterns</a></li>
-<li><a href='tags/Miscellaneous.html'>Miscellaneous</a></li>
-    </ul>
+  <h1>Current Affairs Tags</h1>
+  <ul>
+    <li>
+      <a href='tags/Banking_Sector_&_NBFCs.html' 
+         data-tag="Banking_Sector_&_NBFCs" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Banking Sector & NBFCs
+         <span class="badge" id="badge-Banking_Sector_&_NBFCs"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Capital_Market.html' 
+         data-tag="Capital_Market" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Capital Market
+         <span class="badge" id="badge-Capital_Market"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Centre-State_Relations.html' 
+         data-tag="Centre-State_Relations" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Centre-State Relations
+         <span class="badge" id="badge-Centre-State_Relations"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Conservation.html' 
+         data-tag="Conservation" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Conservation
+         <span class="badge" id="badge-Conservation"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Constitutional_Amendments.html' 
+         data-tag="Constitutional_Amendments" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Constitutional Amendments
+         <span class="badge" id="badge-Constitutional_Amendments"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Cropping_Patterns.html' 
+         data-tag="Cropping_Patterns" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Cropping Patterns
+         <span class="badge" id="badge-Cropping_Patterns"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Dispute_Redressal_Mechanisms.html' 
+         data-tag="Dispute_Redressal_Mechanisms" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Dispute Redressal Mechanisms
+         <span class="badge" id="badge-Dispute_Redressal_Mechanisms"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Emergency_Provisions.html' 
+         data-tag="Emergency_Provisions" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Emergency Provisions
+         <span class="badge" id="badge-Emergency_Provisions"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Federalism.html' 
+         data-tag="Federalism" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Federalism
+         <span class="badge" id="badge-Federalism"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/GS_Paper_-_2.html' 
+         data-tag="GS_Paper_-_2" 
+         data-latest="14-06-2025" 
+         data-count="12">
+         GS Paper - 2
+         <span class="badge" id="badge-GS_Paper_-_2"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/GS_Paper_-_3.html' 
+         data-tag="GS_Paper_-_3" 
+         data-latest="14-06-2025" 
+         data-count="8">
+         GS Paper - 3
+         <span class="badge" id="badge-GS_Paper_-_3"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Government_Policies_&_Interventions.html' 
+         data-tag="Government_Policies_&_Interventions" 
+         data-latest="14-06-2025" 
+         data-count="6">
+         Government Policies & Interventions
+         <span class="badge" id="badge-Government_Policies_&_Interventions"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Indian_Constitution.html' 
+         data-tag="Indian_Constitution" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Indian Constitution
+         <span class="badge" id="badge-Indian_Constitution"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Judiciary.html' 
+         data-tag="Judiciary" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Judiciary
+         <span class="badge" id="badge-Judiciary"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Mineral_&_Energy_Resources.html' 
+         data-tag="Mineral_&_Energy_Resources" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Mineral & Energy Resources
+         <span class="badge" id="badge-Mineral_&_Energy_Resources"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Miscellaneous.html' 
+         data-tag="Miscellaneous" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Miscellaneous
+         <span class="badge" id="badge-Miscellaneous"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Mobilization_of_Resources.html' 
+         data-tag="Mobilization_of_Resources" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Mobilization of Resources
+         <span class="badge" id="badge-Mobilization_of_Resources"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Quasi_Judicial_Bodies.html' 
+         data-tag="Quasi_Judicial_Bodies" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Quasi Judicial Bodies
+         <span class="badge" id="badge-Quasi_Judicial_Bodies"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Quick_Facts_For_Prelims.html' 
+         data-tag="Quick_Facts_For_Prelims" 
+         data-latest="14-06-2025" 
+         data-count="10">
+         Quick Facts For Prelims
+         <span class="badge" id="badge-Quick_Facts_For_Prelims"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Rapid_Fire_CA.html' 
+         data-tag="Rapid_Fire_CA" 
+         data-latest="14-06-2025" 
+         data-count="8">
+         Rapid Fire CA
+         <span class="badge" id="badge-Rapid_Fire_CA"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Transparency_&_Accountability.html' 
+         data-tag="Transparency_&_Accountability" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Transparency & Accountability
+         <span class="badge" id="badge-Transparency_&_Accountability"></span>
+      </a>
+    </li>
+    <li>
+      <a href='tags/Tribunals.html' 
+         data-tag="Tribunals" 
+         data-latest="14-06-2025" 
+         data-count="2">
+         Tribunals
+         <span class="badge" id="badge-Tribunals"></span>
+      </a>
+    </li>
+
+  </ul>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("a[data-tag]").forEach(link => {
+        const tag = link.dataset.tag;
+        const latest = new Date(link.dataset.latest);
+        const count = parseInt(link.dataset.count);
+        const lastVisit = localStorage.getItem("visit_" + tag);
+        const badge = document.getElementById("badge-" + tag);
+
+        if (!lastVisit || new Date(lastVisit) < latest) {
+          badge.textContent = count;
+          badge.style.display = "inline-block";
+        }
+      });
+
+      // Track click
+      document.querySelectorAll("a[data-tag]").forEach(link => {
+        link.addEventListener("click", function () {
+          localStorage.setItem("visit_" + this.dataset.tag, new Date().toISOString());
+        });
+      });
+    });
+  </script>
 </body>
 </html>
