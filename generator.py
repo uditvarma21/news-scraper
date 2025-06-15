@@ -1,65 +1,87 @@
 import os
-import json
+from storage import Storage
 
+<<<<<<< HEAD
 DATA_DIR = "data"
 OUTPUT_DIR = "docs"
 TAGS_DIR = os.path.join(OUTPUT_DIR, "tags")
 TEMPLATE_DIR = "templates"
+=======
+DOCS_DIR = "docs"
+TAGS_DIR = os.path.join(DOCS_DIR, "tags")
+STATIC_PATH_INDEX = "static/base.css"
+STATIC_PATH_TAG = "../static/base.css"
+>>>>>>> 🔥 Removed templates, moved all content to docs with updated styling
 
-def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+def build_index(tags):
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drishti Current Affairs</title>
+  <link rel="stylesheet" href="{STATIC_PATH_INDEX}">
+</head>
+<body>
+  <h1>Current Affairs Tags</h1>
+  <ul>
+"""
+    for tag in sorted(tags):
+        safe_tag = tag.replace(" ", "_")
+        html += f"<li><a href='tags/{safe_tag}.html'>{tag}</a></li>\n"
 
-def save_html(content, path):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(content)
-
-def flatten_articles(articles_json):
-    if isinstance(articles_json, list) and len(articles_json) == 1 and isinstance(articles_json[0], dict):
-        return list(articles_json[0].values())
-    return articles_json
+    html += """
+  </ul>
+</body>
+</html>
+"""
+    return html
 
 def build_tag_page(tag, article_ids, articles_dict):
-    articles = [a for a in articles_dict if a["id"] in article_ids]
-    articles.sort(key=lambda x: x.get("date", ""), reverse=True)
-    articles_html = ""
-    for article in articles:
-        articles_html += (
-            f"<div class='article'>"
-            f"<h3>{article['title']}</h3>"
-            f"<div>{article['content']}</div>"
-            f"</div>\n"
-        )
-    with open(os.path.join(TEMPLATE_DIR, "tag.html")) as f:
-        template = f.read()
-    return template.replace("{{ tag_name }}", tag).replace("{{ articles_by_date }}", articles_html)
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{tag} Articles</title>
+  <link rel="stylesheet" href="{STATIC_PATH_TAG}">
+</head>
+<body>
+  <h1>{tag}</h1>
+"""
 
-def build_index_page(tags):
-    tag_links = "\n".join(
-        f"<li><a href='tags/{tag.replace(' ', '_')}.html'>{tag}</a></li>" for tag in tags
-    )
-    with open(os.path.join(TEMPLATE_DIR, "index.html")) as f:
-        template = f.read()
-    return template.replace("{{ tag_links }}", tag_links)
+    for aid in article_ids:
+        article = articles_dict.get(aid)
+        if not article:
+            continue
+        html += f"""
+  <div class="article">
+    <h3>{article['title']}</h3>
+    <p><em>{article['date']}</em></p>
+    {article['content']}
+  </div>
+"""
+
+    html += """
+</body>
+</html>
+"""
+    return html
 
 def main():
-    print("📦 Loading data...")
-    articles_dict = load_json(os.path.join(DATA_DIR, "articles.json"))  # Now a dict
-    articles_list = list(articles_dict.values())  # Convert to list for processing
-    tags_dict = load_json(os.path.join(DATA_DIR, "tags.json"))
+    os.makedirs(DOCS_DIR, exist_ok=True)
+    os.makedirs(TAGS_DIR, exist_ok=True)
 
-    print("🛠️ Generating tag HTML pages...")
-    for tag, ids in tags_dict.items():
-        html = build_tag_page(tag, ids, articles_list)
-        tag_filename = os.path.join(TAGS_DIR, f"{tag.replace(' ', '_')}.html")
-        save_html(html, tag_filename)
+    storage = Storage()
+    index_html = build_index(storage.tags)
+    with open(os.path.join(DOCS_DIR, "index.html"), "w", encoding="utf-8") as f:
+        f.write(index_html)
 
-    print("🛠️ Generating index.html...")
-    index_html = build_index_page(tags_dict.keys())
-    save_html(index_html, os.path.join(OUTPUT_DIR, "index.html"))
+    for tag, ids in storage.tags.items():
+        tag_filename = tag.replace(" ", "_") + ".html"
+        tag_html = build_tag_page(tag, ids, storage.articles)
+        with open(os.path.join(TAGS_DIR, tag_filename), "w", encoding="utf-8") as f:
+            f.write(tag_html)
 
-    print("✅ Completed generation!")
+    print(f"✅ HTML pages generated in {DOCS_DIR}/")
 
 if __name__ == "__main__":
     main()

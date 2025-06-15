@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+debug_page.html
+git add .gitignore
+git commit -m "🧹 Clean up: ignore __pycache__, .pyc, and debug_page.html"
+git pudebug_page.html
