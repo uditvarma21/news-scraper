@@ -1,12 +1,8 @@
 import os
-import json
 from storage import Storage
-from datetime import datetime
 
-DATA_DIR = "data"
 OUTPUT_DIR = "docs"
 TAGS_DIR = os.path.join(OUTPUT_DIR, "tags")
-TEMPLATE_DIR = "templates"
 
 STATIC_PATH_INDEX = "static/base.css"
 STATIC_PATH_TAG = "../static/base.css"
@@ -38,16 +34,19 @@ def build_index(tags, articles):
   <h1>Current Affairs Tags</h1>
   <ul>
 """
-
     for tag in sorted(tags):
         safe_tag = tag.replace(" ", "_")
-        article_ids = tags[tag]
-        latest_date = max([articles[aid]['date'] for aid in article_ids])
+        article_ids = list(dict.fromkeys(tags[tag]))  # Deduplicate here
+        # Only include articles that exist in storage.articles
+        valid_article_ids = [aid for aid in article_ids if aid in articles]
+        if not valid_article_ids:
+            continue
+        latest_date = max([articles[aid]['date'] for aid in valid_article_ids])
         html += f"""    <li>
       <a href='tags/{safe_tag}.html' 
          data-tag="{safe_tag}" 
          data-latest="{latest_date}" 
-         data-count="{len(article_ids)}">
+         data-count="{len(valid_article_ids)}">
          {tag}
          <span class="badge" id="badge-{safe_tag}"></span>
       </a>
@@ -107,8 +106,7 @@ def build_tag_page(tag, article_ids, articles_dict):
 <body>
   <h1>{tag}</h1>
 """
-
-    for aid in article_ids:
+    for aid in list(dict.fromkeys(article_ids)):  # Deduplicate again just in case
         article = articles_dict.get(aid)
         if not article:
             continue
@@ -131,13 +129,19 @@ def main():
     os.makedirs(TAGS_DIR, exist_ok=True)
 
     storage = Storage()
+
     index_html = build_index(storage.tags, storage.articles)
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
     for tag, ids in storage.tags.items():
+        unique_ids = list(dict.fromkeys(ids))
+        # Only include articles that exist in storage.articles
+        valid_ids = [aid for aid in unique_ids if aid in storage.articles]
+        if not valid_ids:
+            continue
         tag_filename = tag.replace(" ", "_") + ".html"
-        tag_html = build_tag_page(tag, ids, storage.articles)
+        tag_html = build_tag_page(tag, valid_ids, storage.articles)
         with open(os.path.join(TAGS_DIR, tag_filename), "w", encoding="utf-8") as f:
             f.write(tag_html)
 
