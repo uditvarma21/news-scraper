@@ -2,7 +2,7 @@ import os
 import json
 
 DATA_DIR = "data"
-OUTPUT_DIR = "output"
+OUTPUT_DIR = "docs"
 TAGS_DIR = os.path.join(OUTPUT_DIR, "tags")
 TEMPLATE_DIR = "templates"
 
