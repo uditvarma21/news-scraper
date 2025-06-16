@@ -87,6 +87,13 @@ def build_index(tags, articles):
     return html
 
 def build_tag_page(tag, article_ids, articles_dict):
+    # Sort articles by date descending
+    sorted_ids = sorted(
+        list(dict.fromkeys(article_ids)),
+        key=lambda aid: articles_dict.get(aid, {}).get("date", ""),
+        reverse=True
+    )
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,7 +116,7 @@ def build_tag_page(tag, article_ids, articles_dict):
 <body>
   <h1>{tag}</h1>
 """
-    for aid in list(dict.fromkeys(article_ids)):  # Deduplicate again
+    for aid in sorted_ids:
         article = articles_dict.get(aid)
         if not article:
             continue
@@ -126,6 +133,7 @@ def build_tag_page(tag, article_ids, articles_dict):
 </html>
 """
     return html
+
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
