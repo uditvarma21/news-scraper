@@ -1,0 +1,35 @@
+name: Auto Scrape & Deploy
+
+on:
+  schedule:
+    - cron: '30 6 * * *'  # 6:30 AM UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write  # 👈 this line gives write access for git push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run script
+        run: python run.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "🔄 Auto-update: scraped data and rebuilt site" || echo "No changes to commit"
+          git push
