@@ -1,4 +1,5 @@
 import os
+import re
 from storage import Storage
 
 OUTPUT_DIR = "docs"
@@ -6,6 +7,10 @@ TAGS_DIR = os.path.join(OUTPUT_DIR, "tags")
 
 STATIC_PATH_INDEX = "static/base.css"
 STATIC_PATH_TAG = "../static/base.css"
+
+def safe_filename(tag):
+    """Convert tag to a safe filename for filesystem use."""
+    return re.sub(r'[^a-zA-Z0-9_]', '_', tag.replace(" ", "_")) + ".html"
 
 def build_index(tags, articles):
     html = f"""<!DOCTYPE html>
@@ -35,9 +40,8 @@ def build_index(tags, articles):
   <ul>
 """
     for tag in sorted(tags):
-        safe_tag = tag.replace(" ", "_")
+        safe_tag = re.sub(r'[^a-zA-Z0-9_]', '_', tag.replace(" ", "_"))
         article_ids = list(dict.fromkeys(tags[tag]))  # Deduplicate here
-        # Only include articles that exist in storage.articles
         valid_article_ids = [aid for aid in article_ids if aid in articles]
         if not valid_article_ids:
             continue
@@ -70,7 +74,6 @@ def build_index(tags, articles):
         }
       });
 
-      // Track click
       document.querySelectorAll("a[data-tag]").forEach(link => {
         link.addEventListener("click", function () {
           localStorage.setItem("visit_" + this.dataset.tag, new Date().toISOString());
@@ -106,7 +109,7 @@ def build_tag_page(tag, article_ids, articles_dict):
 <body>
   <h1>{tag}</h1>
 """
-    for aid in list(dict.fromkeys(article_ids)):  # Deduplicate again just in case
+    for aid in list(dict.fromkeys(article_ids)):  # Deduplicate again
         article = articles_dict.get(aid)
         if not article:
             continue
@@ -136,11 +139,10 @@ def main():
 
     for tag, ids in storage.tags.items():
         unique_ids = list(dict.fromkeys(ids))
-        # Only include articles that exist in storage.articles
         valid_ids = [aid for aid in unique_ids if aid in storage.articles]
         if not valid_ids:
             continue
-        tag_filename = tag.replace(" ", "_") + ".html"
+        tag_filename = safe_filename(tag)
         tag_html = build_tag_page(tag, valid_ids, storage.articles)
         with open(os.path.join(TAGS_DIR, tag_filename), "w", encoding="utf-8") as f:
             f.write(tag_html)
