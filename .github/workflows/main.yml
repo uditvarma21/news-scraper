@@ -2,7 +2,7 @@ name: Auto Scrape & Deploy
 
 on:
   schedule:
-    - cron: '30 9 * * *'  # 3:)0 PM UTC daily
+    - cron: '35 9 * * *'  # 3:)0 PM UTC daily
   workflow_dispatch:
 
 permissions:
