@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from storage import Storage
-from datetime import datetime, timedelta
+from datetime import datetime
 
 BASE = "https://www.drishtiias.com/current-affairs-news-analysis-editorials/news-analysis"
 
@@ -66,9 +66,8 @@ def scrape_by_date(date_str):
     return news
 
 def main():
-    # 🔁 Use yesterday's date
-    yesterday = datetime.now() - timedelta(days=1)
-    date_str = yesterday.strftime("%d-%m-%Y")
+    # 🔁 Use today's date
+    date_str = datetime.now().strftime("%d-%m-%Y")
     print(f"📅 Running scraper for {date_str}")
     items = scrape_by_date(date_str)
 
