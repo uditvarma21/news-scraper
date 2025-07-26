@@ -79,7 +79,9 @@
     "Hornbill Conservation Centre",
     "Bharat NCX 2025",
     "Towards Resilient and Prosperous Cities in India",
-    "ICJ’s Advisory on State Duties for Climate Action"
+    "ICJ’s Advisory on State Duties for Climate Action",
+    "Progress on India’s Climate Targets",
+    "India’s First Tribal Genome Sequencing Project"
   ],
   "GS Paper - 2": [
     "Revamping India’s BFSI Sector",
@@ -160,7 +162,10 @@
     "Towards Resilient and Prosperous Cities in India",
     "One Stop Centres Scheme",
     "DHRUVA Policy",
-    "ICJ’s Advisory on State Duties for Climate Action"
+    "ICJ’s Advisory on State Duties for Climate Action",
+    "National Cooperation Policy 2025",
+    "Progress on India’s Climate Targets",
+    "2025 Henley Passport Index Q2"
   ],
   "Mobilization of Resources": [
     "Revamping India’s BFSI Sector",
@@ -224,7 +229,9 @@
     "Bharat NCX 2025",
     "Towards Resilient and Prosperous Cities in India",
     "One Stop Centres Scheme",
-    "DHRUVA Policy"
+    "DHRUVA Policy",
+    "National Cooperation Policy 2025",
+    "Progress on India’s Climate Targets"
   ],
   "Quasi Judicial Bodies": [
     "Trust-Based Regulation",
@@ -340,7 +347,11 @@
     "Bharat NCX 2025",
     "Birth Anniversary of Bal Gangadhar Tilak",
     "DHRUVA Policy",
-    "ICJ’s Advisory on State Duties for Climate Action"
+    "ICJ’s Advisory on State Duties for Climate Action",
+    "Sohrai, Pattachitra, and Patua Paintings",
+    "Kargil Vijay Diwas",
+    "India’s First Tribal Genome Sequencing Project",
+    "2025 Henley Passport Index Q2"
   ],
   "Indian Constitution": [
     "50 years of National Emergency",
@@ -351,7 +362,8 @@
   ],
   "Constitutional Amendments": [
     "50 years of National Emergency",
-    "50 years of National Emergency"
+    "50 years of National Emergency",
+    "National Cooperation Policy 2025"
   ],
   "Federalism": [
     "50 years of National Emergency",
@@ -415,7 +427,10 @@
     "Biostimulants",
     "India’s Advancements in Ballistic and Air Defence Systems",
     "National Conference on Good Governance Practices",
-    "Bitra Island"
+    "Bitra Island",
+    "Kargil Vijay Diwas",
+    "India’s First Tribal Genome Sequencing Project",
+    "2025 Henley Passport Index Q2"
   ],
   "Mineral & Energy Resources": [
     "IREDA Bags ‘Excellent’ Ratings",
@@ -443,7 +458,8 @@
     "Gujarat's Banni Grasslands Ready for Cheetah Reintroduction",
     "Global Wetland Outlook 2025",
     "Death of Cheetah at Kuno National Park",
-    "Hornbill Conservation Centre"
+    "Hornbill Conservation Centre",
+    "Progress on India’s Climate Targets"
   ],
   "Cropping Patterns": [
     "Snail Infestation in Cardamom",
@@ -481,7 +497,8 @@
     "OECD-FAO Agricultural Outlook 2025-2034",
     "Global Wetland Outlook 2025",
     "Towards Resilient and Prosperous Cities in India",
-    "ICJ’s Advisory on State Duties for Climate Action"
+    "ICJ’s Advisory on State Duties for Climate Action",
+    "Progress on India’s Climate Targets"
   ],
   "India and its Neighbourhood": [
     "Iran-Israel Conflict 2025",
@@ -620,10 +637,13 @@
     "National Flag Day 2025",
     "Bitra Island",
     "Towards Resilient and Prosperous Cities in India",
-    "Birth Anniversary of Bal Gangadhar Tilak"
+    "Birth Anniversary of Bal Gangadhar Tilak",
+    "Sohrai, Pattachitra, and Patua Paintings",
+    "Kargil Vijay Diwas"
   ],
   "Indian Art Forms": [
-    "11th International Yoga Day 2025"
+    "11th International Yoga Day 2025",
+    "Sohrai, Pattachitra, and Patua Paintings"
   ],
   "Fundamental Rights": [
     "Magna Carta: Blueprint for Democracy",
@@ -664,7 +684,8 @@
     "SHGs in India"
   ],
   "Self Help Groups (SHGs)": [
-    "SHGs in India"
+    "SHGs in India",
+    "National Cooperation Policy 2025"
   ],
   "Biotechnology": [
     "Favipiravir Shows Promise Against Chandipura Virus (CHPV)",
@@ -747,10 +768,12 @@
     "Mahabodhi Temple"
   ],
   "Ancient Indian History": [
-    "Mahabodhi Temple"
+    "Mahabodhi Temple",
+    "Sohrai, Pattachitra, and Patua Paintings"
   ],
   "Indian Heritage Sites": [
-    "Mahabodhi Temple"
+    "Mahabodhi Temple",
+    "Sohrai, Pattachitra, and Patua Paintings"
   ],
   "Urbanization": [
     "Urban Centres as Catalysts of India's Growth",
@@ -787,7 +810,8 @@
   "Renewable Energy": [
     "Reversal on ELV Fuel Ban",
     "India Achieves 50% Non-Fossil Fuel Power Capacity",
-    "OECD-FAO Agricultural Outlook 2025-2034"
+    "OECD-FAO Agricultural Outlook 2025-2034",
+    "Progress on India’s Climate Targets"
   ],
   "International Treaties & Agreements": [
     "Mizoram’s Refugees Crisis"
@@ -852,5 +876,17 @@
   ],
   "Geography": [
     "Bitra Island"
+  ],
+  "Non-Governmental Organisations (NGOs)": [
+    "National Cooperation Policy 2025"
+  ],
+  "Indian Paintings": [
+    "Sohrai, Pattachitra, and Patua Paintings"
+  ],
+  "Indian Architecture": [
+    "Sohrai, Pattachitra, and Patua Paintings"
+  ],
+  "Post-independence Consolidation of India": [
+    "Kargil Vijay Diwas"
   ]
 }
