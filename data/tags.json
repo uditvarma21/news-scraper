@@ -81,7 +81,9 @@
     "Towards Resilient and Prosperous Cities in India",
     "ICJ’s Advisory on State Duties for Climate Action",
     "Progress on India’s Climate Targets",
-    "India’s First Tribal Genome Sequencing Project"
+    "India’s First Tribal Genome Sequencing Project",
+    "Financial Conditions Index",
+    "Outlook of Indian Economy"
   ],
   "GS Paper - 2": [
     "Revamping India’s BFSI Sector",
@@ -165,7 +167,8 @@
     "ICJ’s Advisory on State Duties for Climate Action",
     "National Cooperation Policy 2025",
     "Progress on India’s Climate Targets",
-    "2025 Henley Passport Index Q2"
+    "2025 Henley Passport Index Q2",
+    "Outlook of Indian Economy"
   ],
   "Mobilization of Resources": [
     "Revamping India’s BFSI Sector",
@@ -181,7 +184,8 @@
   "Banking Sector & NBFCs": [
     "Revamping India’s BFSI Sector",
     "Revamping India’s BFSI Sector",
-    "Declining Household Savings & Rising Liabilities"
+    "Declining Household Savings & Rising Liabilities",
+    "Financial Conditions Index"
   ],
   "Government Policies & Interventions": [
     "Revamping India’s BFSI Sector",
@@ -231,7 +235,8 @@
     "One Stop Centres Scheme",
     "DHRUVA Policy",
     "National Cooperation Policy 2025",
-    "Progress on India’s Climate Targets"
+    "Progress on India’s Climate Targets",
+    "Outlook of Indian Economy"
   ],
   "Quasi Judicial Bodies": [
     "Trust-Based Regulation",
@@ -351,7 +356,8 @@
     "Sohrai, Pattachitra, and Patua Paintings",
     "Kargil Vijay Diwas",
     "India’s First Tribal Genome Sequencing Project",
-    "2025 Henley Passport Index Q2"
+    "2025 Henley Passport Index Q2",
+    "Financial Conditions Index"
   ],
   "Indian Constitution": [
     "50 years of National Emergency",
@@ -539,7 +545,8 @@
     "World Population Day 2025 and India's Youth",
     "Reversal on ELV Fuel Ban",
     "Catastrophe Bonds for Natural Disasters",
-    "Unified Payments Interface"
+    "Unified Payments Interface",
+    "Outlook of Indian Economy"
   ],
   "Distribution of Key Natural Resources": [
     "Tea Board of India"
@@ -888,5 +895,8 @@
   ],
   "Post-independence Consolidation of India": [
     "Kargil Vijay Diwas"
+  ],
+  "Monetary Policy": [
+    "Financial Conditions Index"
   ]
 }
