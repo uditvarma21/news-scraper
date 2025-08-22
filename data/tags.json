@@ -126,7 +126,9 @@
     "SRVAs and Internationalization of Rupee",
     "Golden Dome Missile Defense System",
     "Dibru-Saikhowa National Park",
-    "Sustainable Aviation Fuel (SAF)"
+    "Sustainable Aviation Fuel (SAF)",
+    "Silver Economy",
+    "Need for a National Space Law in India"
   ],
   "GS Paper - 2": [
     "Revamping India’s BFSI Sector",
@@ -250,7 +252,10 @@
     "Income Tax Bill, 2025",
     "Major Announcements on India’s 79th Independence Day",
     "Key Sports Related Bills Passed in Parliament",
-    "Stray Dog Management in India: Balancing Public Safety and Animal Welfare"
+    "Stray Dog Management in India: Balancing Public Safety and Animal Welfare",
+    "Silver Economy",
+    "SLINEX-25",
+    "Nepal Declared Rubella-Free"
   ],
   "Mobilization of Resources": [
     "Revamping India’s BFSI Sector",
@@ -353,7 +358,9 @@
     "Income Tax Bill, 2025",
     "Major Announcements on India’s 79th Independence Day",
     "Key Sports Related Bills Passed in Parliament",
-    "Dibru-Saikhowa National Park"
+    "Dibru-Saikhowa National Park",
+    "Silver Economy",
+    "Nepal Declared Rubella-Free"
   ],
   "Quasi Judicial Bodies": [
     "Trust-Based Regulation",
@@ -510,7 +517,9 @@
     "Golden Dome Missile Defense System",
     "Dibru-Saikhowa National Park",
     "Sustainable Aviation Fuel (SAF)",
-    "Rare Earth Magnet"
+    "Rare Earth Magnet",
+    "SLINEX-25",
+    "Nepal Declared Rubella-Free"
   ],
   "Indian Constitution": [
     "50 years of National Emergency",
@@ -621,7 +630,9 @@
     "Golden Dome Missile Defense System",
     "Dibru-Saikhowa National Park",
     "Sustainable Aviation Fuel (SAF)",
-    "Rare Earth Magnet"
+    "Rare Earth Magnet",
+    "SLINEX-25",
+    "Nepal Declared Rubella-Free"
   ],
   "Mineral & Energy Resources": [
     "IREDA Bags ‘Excellent’ Ratings",
@@ -721,7 +732,8 @@
     "US Lists ‘The Resistance Front’ as Global Terrorist Organization",
     "India Hosts 2nd BIMSTEC Ports Conclave",
     "China’s Mega Dam on Brahmaputra",
-    "India-UAE 13th JDCC"
+    "India-UAE 13th JDCC",
+    "SLINEX-25"
   ],
   "Bilateral Groupings & Agreements": [
     "Iran-Israel Conflict 2025",
@@ -770,7 +782,8 @@
     "Bills to Modernise India’s Maritime Laws",
     "Semiconductor Industry in India",
     "Major Announcements on India’s 79th Independence Day",
-    "SRVAs and Internationalization of Rupee"
+    "SRVAs and Internationalization of Rupee",
+    "Silver Economy"
   ],
   "Distribution of Key Natural Resources": [
     "Tea Board of India"
@@ -825,7 +838,8 @@
     "Noise Effect on Quantum Entanglement",
     "NISAR Satellite",
     "ISRO Space Analog Mission ‘HOPE’",
-    "India’s First Earth Observation Satellite Constellation"
+    "India’s First Earth Observation Satellite Constellation",
+    "Need for a National Space Law in India"
   ],
   "Buffer Stocks & Food Security": [
     "Achieving Self-Sufficiency in Pulses"
@@ -856,7 +870,8 @@
     "India Hosts 2nd BIMSTEC Ports Conclave",
     "India's Resolution on the 'Wise Use of Wetlands' Adopted at Ramsar COP15",
     "India’s 3rd Voluntary National Review on SDGs",
-    "State Health Regulatory Excellence Index"
+    "State Health Regulatory Excellence Index",
+    "Nepal Declared Rubella-Free"
   ],
   "Global Groupings": [
     "51st G7 Summit",
@@ -917,7 +932,8 @@
     "International Moon Day",
     "NISAR Satellite",
     "ISRO Space Analog Mission ‘HOPE’",
-    "India’s First Earth Observation Satellite Constellation"
+    "India’s First Earth Observation Satellite Constellation",
+    "Need for a National Space Law in India"
   ],
   "Health": [
     "Spinal Muscular Atrophy",
@@ -928,7 +944,8 @@
     "Diabetes in India",
     "MANAS Helpline",
     "India’s 3rd Voluntary National Review on SDGs",
-    "State Health Regulatory Excellence Index"
+    "State Health Regulatory Excellence Index",
+    "Nepal Declared Rubella-Free"
   ],
   "E-Governance": [
     "Rare Donor Registry Integrated with e-Rakt Kosh",
@@ -966,12 +983,14 @@
     "5 Years of NEP 2020"
   ],
   "Issues Related to Children": [
-    "Promoting Foreign Universities in India"
+    "Promoting Foreign Universities in India",
+    "Nepal Declared Rubella-Free"
   ],
   "Human Resource": [
     "Promoting Foreign Universities in India",
     "World Population Day 2025 and India's Youth",
-    "Skill Impact Bonds"
+    "Skill Impact Bonds",
+    "Silver Economy"
   ],
   "Skill Development": [
     "Promoting Foreign Universities in India",
@@ -1160,7 +1179,8 @@
     "Aurobindo Ghose"
   ],
   "Management of Social Sector/Services": [
-    "Chhattisgarh Forest Department Withdraws CFRR Directive"
+    "Chhattisgarh Forest Department Withdraws CFRR Directive",
+    "Silver Economy"
   ],
   "Forest Resources": [
     "Chhattisgarh Forest Department Withdraws CFRR Directive"
@@ -1285,5 +1305,8 @@
   ],
   "Ethics and Human Interface": [
     "Stray Dog Management in India: Balancing Public Safety and Animal Welfare"
+  ],
+  "Issues Related to Elderly": [
+    "Silver Economy"
   ]
 }
