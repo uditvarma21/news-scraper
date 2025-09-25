@@ -184,7 +184,10 @@
     "Himalayan Musk Deer",
     "CAG Report on the Fiscal Health of States",
     "Global Innovation Index 2025",
-    "India-US Corn Conundrum"
+    "India-US Corn Conundrum",
+    "https://sarathi.parivahan.gov.in/",
+    "India’s Roadmap for Fusion Power",
+    "India's Tea Industry"
   ],
   "GS Paper - 2": [
     "Revamping India’s BFSI Sector",
@@ -366,7 +369,11 @@
     "Manual Scavenging in India",
     "President’s Rule in India",
     "CAG Report on the Fiscal Health of States",
-    "Global Innovation Index 2025"
+    "Global Innovation Index 2025",
+    "https://sarathi.parivahan.gov.in/",
+    "India’s Roadmap for Fusion Power",
+    "Defamation",
+    "PRAGATI"
   ],
   "Mobilization of Resources": [
     "Revamping India’s BFSI Sector",
@@ -724,7 +731,9 @@
     "India Adds 7 Natural Sites to UNESCO Tentative List",
     "Bagram Air Base",
     "Himalayan Musk Deer",
-    "CAG Report on the Fiscal Health of States"
+    "CAG Report on the Fiscal Health of States",
+    "Defamation",
+    "PRAGATI"
   ],
   "Indian Constitution": [
     "50 years of National Emergency",
@@ -778,7 +787,8 @@
     "Collegium System of Judicial Appointments in India",
     "SC Issues DNA Evidence Guidelines in Criminal Cases",
     "Supreme Court’s Interim Order on the Waqf (Amendment) Act, 2025",
-    "President’s Rule in India"
+    "President’s Rule in India",
+    "Defamation"
   ],
   "Rapid Fire CA": [
     "Deep Seafloor Exploration",
@@ -889,7 +899,8 @@
     "Swachhata Hi Seva 2025",
     "India-AI Impact Summit 2026",
     "Bagram Air Base",
-    "Himalayan Musk Deer"
+    "Himalayan Musk Deer",
+    "PRAGATI"
   ],
   "Mineral & Energy Resources": [
     "IREDA Bags ‘Excellent’ Ratings",
@@ -944,7 +955,8 @@
     "Inauguration of National Turmeric Board in Nizamabad",
     "OECD-FAO Agricultural Outlook 2025-2034",
     "MS Swaminathan Centenary Conference",
-    "India-US Corn Conundrum"
+    "India-US Corn Conundrum",
+    "India's Tea Industry"
   ],
   "Miscellaneous": [
     "Stingless Bees",
@@ -1007,7 +1019,8 @@
     "Great Nicobar Island Project",
     "Stubble Burning in India",
     "Himalayan Musk Deer",
-    "India-US Corn Conundrum"
+    "India-US Corn Conundrum",
+    "https://sarathi.parivahan.gov.in/"
   ],
   "India and its Neighbourhood": [
     "Iran-Israel Conflict 2025",
@@ -1082,10 +1095,12 @@
     "Green Hydrogen",
     "Ensuring Balanced Industrial Distribution in India",
     "Startup India Revolution",
-    "Global Innovation Index 2025"
+    "Global Innovation Index 2025",
+    "India's Tea Industry"
   ],
   "Distribution of Key Natural Resources": [
-    "Tea Board of India"
+    "Tea Board of India",
+    "India's Tea Industry"
   ],
   "Agricultural Resources": [
     "Tea Board of India",
@@ -1094,7 +1109,8 @@
     "Palmyra Palm Trees",
     "Fertilizer Sector in India",
     "BHARATI Initiative",
-    "Reforming the PDS in India"
+    "Reforming the PDS in India",
+    "India's Tea Industry"
   ],
   "Welfare Schemes": [
     "PM-WANI Scheme",
@@ -1245,7 +1261,8 @@
     "Kerala Model for Sustainable Urbanisation in India",
     "Stubble Burning in India",
     "India Adds 7 Natural Sites to UNESCO Tentative List",
-    "NE-SPARKS"
+    "NE-SPARKS",
+    "India's Tea Industry"
   ],
   "Indian Art Forms": [
     "11th International Yoga Day 2025",
@@ -1292,7 +1309,8 @@
     "Unified Payments Interface",
     "DHRUVA Policy",
     "Kerala ‘First’ Digitally Literate State in India",
-    "PM SVANidhi 2.0"
+    "PM SVANidhi 2.0",
+    "PRAGATI"
   ],
   "Advisory Bodies": [
     "Rare Donor Registry Integrated with e-Rakt Kosh"
@@ -1379,7 +1397,8 @@
     "Special Intensive Revision of Electoral Rolls",
     "Removal of Ministers Under Serious Charges",
     "Should the 50% Reservation Cap Be Raised?",
-    "Supreme Court’s Interim Order on the Waqf (Amendment) Act, 2025"
+    "Supreme Court’s Interim Order on the Waqf (Amendment) Act, 2025",
+    "Defamation"
   ],
   "Representation of People's Act": [
     "India's First Mobile E-Voting in Bihar",
@@ -1507,13 +1526,15 @@
     "India Achieves 50% Non-Fossil Fuel Power Capacity",
     "OECD-FAO Agricultural Outlook 2025-2034",
     "Progress on India’s Climate Targets",
-    "India-US Corn Conundrum"
+    "India-US Corn Conundrum",
+    "https://sarathi.parivahan.gov.in/"
   ],
   "International Treaties & Agreements": [
     "Mizoram’s Refugees Crisis",
     "Negotiations for India-Oman CEPA Concluded",
     "India - Eurasian Economic Union FTA Negotiations",
-    "India-Mauritius Relations"
+    "India-Mauritius Relations",
+    "https://sarathi.parivahan.gov.in/"
   ],
   "Issues Related to Women": [
     "Dowry Deaths in India",
@@ -1625,7 +1646,8 @@
     "Polavaram- Banakacherla Project Dispute"
   ],
   "Co-operative Federalism": [
-    "Polavaram- Banakacherla Project Dispute"
+    "Polavaram- Banakacherla Project Dispute",
+    "PRAGATI"
   ],
   "Irrigation": [
     "Polavaram- Banakacherla Project Dispute"
@@ -1638,7 +1660,8 @@
   ],
   "State Legislature": [
     "Anti-Defection Law",
-    "Removal of Ministers Under Serious Charges"
+    "Removal of Ministers Under Serious Charges",
+    "Defamation"
   ],
   "Volcanoes": [
     "Mount Lewotobi Laki Laki"
@@ -1749,5 +1772,8 @@
   ],
   "Conservation of Resources": [
     "Stubble Burning in India"
+  ],
+  "Nuclear Technology": [
+    "India’s Roadmap for Fusion Power"
   ]
 }
