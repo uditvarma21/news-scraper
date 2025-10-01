@@ -194,7 +194,10 @@
     "WTO Agreement on Fisheries Subsidies",
     "National Initiative on Water Security",
     "World Food India 2025",
-    "Crowd Management in India"
+    "Crowd Management in India",
+    "Wassenaar Arrangement",
+    "India-EFTA Free Trade Agreement",
+    "Payments Regulatory Board (PRB)"
   ],
   "GS Paper - 2": [
     "Revamping India’s BFSI Sector",
@@ -391,7 +394,13 @@
     "Ladakh's Protest for Sixth Schedule Status",
     "World Food India 2025",
     "Crowd Management in India",
-    "Provincial Citizenship"
+    "Provincial Citizenship",
+    "India’s manufacturing sector shows momentum but faces persistent bottlenecks",
+    "Empowering Women in Agriculture",
+    "Wassenaar Arrangement",
+    "International Civil Aviation Organization (ICAO)",
+    "India-EFTA Free Trade Agreement",
+    "Payments Regulatory Board (PRB)"
   ],
   "Mobilization of Resources": [
     "Revamping India’s BFSI Sector",
@@ -421,7 +430,8 @@
     "Banking Laws (Amendment) Act, 2025",
     "RBI’s Recommendations on Liquidity Management Framework",
     "RBI’s FREE-AI Committee Report",
-    "SRVAs and Internationalization of Rupee"
+    "SRVAs and Internationalization of Rupee",
+    "Payments Regulatory Board (PRB)"
   ],
   "Government Policies & Interventions": [
     "Revamping India’s BFSI Sector",
@@ -549,7 +559,11 @@
     "National Initiative on Water Security",
     "World Food India 2025",
     "Crowd Management in India",
-    "Provincial Citizenship"
+    "Provincial Citizenship",
+    "India’s manufacturing sector shows momentum but faces persistent bottlenecks",
+    "Empowering Women in Agriculture",
+    "Wassenaar Arrangement",
+    "Payments Regulatory Board (PRB)"
   ],
   "Quasi Judicial Bodies": [
     "Trust-Based Regulation",
@@ -762,7 +776,10 @@
     "PRAGATI",
     "Goods and Services Tax Appellate Tribunal (GSTAT)",
     "WTO Agreement on Fisheries Subsidies",
-    "National Initiative on Water Security"
+    "National Initiative on Water Security",
+    "India’s manufacturing sector shows momentum but faces persistent bottlenecks",
+    "International Civil Aviation Organization (ICAO)",
+    "Payments Regulatory Board (PRB)"
   ],
   "Indian Constitution": [
     "50 years of National Emergency",
@@ -934,7 +951,9 @@
     "Bagram Air Base",
     "Himalayan Musk Deer",
     "PRAGATI",
-    "National Initiative on Water Security"
+    "National Initiative on Water Security",
+    "International Civil Aviation Organization (ICAO)",
+    "Payments Regulatory Board (PRB)"
   ],
   "Mineral & Energy Resources": [
     "IREDA Bags ‘Excellent’ Ratings",
@@ -1107,7 +1126,8 @@
     "Negotiations for India-Oman CEPA Concluded",
     "Semiconductor Industry in India",
     "India-Mauritius Relations",
-    "US Sanctions on Chabahar Port"
+    "US Sanctions on Chabahar Port",
+    "Wassenaar Arrangement"
   ],
   "Growth & Development": [
     "Tea Board of India",
@@ -1155,7 +1175,8 @@
     "One Stop Centres Scheme",
     "OMC Compensation & PMUY Subsidy Extension",
     "Fast Track Special Courts",
-    "Should the 50% Reservation Cap Be Raised?"
+    "Should the 50% Reservation Cap Be Raised?",
+    "Empowering Women in Agriculture"
   ],
   "Cyber Security": [
     "PM-WANI Scheme",
@@ -1246,7 +1267,8 @@
     "India - Eurasian Economic Union FTA Negotiations",
     "India-Israel Sign Bilateral Investment Agreement (BIA)",
     "India-Mauritius Relations",
-    "India’s SDG 3 Progress"
+    "India’s SDG 3 Progress",
+    "International Civil Aviation Organization (ICAO)"
   ],
   "Global Groupings": [
     "51st G7 Summit",
@@ -1581,14 +1603,16 @@
     "Negotiations for India-Oman CEPA Concluded",
     "India - Eurasian Economic Union FTA Negotiations",
     "India-Mauritius Relations",
-    "https://sarathi.parivahan.gov.in/"
+    "https://sarathi.parivahan.gov.in/",
+    "India-EFTA Free Trade Agreement"
   ],
   "Issues Related to Women": [
     "Dowry Deaths in India",
     "One Stop Centres Scheme",
     "SC Strikes Down Army’s Gender-Based Quota for JAG Recruitment",
     "Fast Track Special Courts",
-    "Women-Led Economic Growth for Viksit Bharat 2047"
+    "Women-Led Economic Growth for Viksit Bharat 2047",
+    "Empowering Women in Agriculture"
   ],
   "Role of Women": [
     "Dowry Deaths in India"
@@ -1826,6 +1850,10 @@
     "National Initiative on Water Security"
   ],
   "Nuclear Technology": [
-    "India’s Roadmap for Fusion Power"
+    "India’s Roadmap for Fusion Power",
+    "Wassenaar Arrangement"
+  ],
+  "Liberalization": [
+    "India-EFTA Free Trade Agreement"
   ]
 }
